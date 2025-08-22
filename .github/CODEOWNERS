@@ -1,0 +1,35 @@
+# CODEOWNERS file for payment-connector-144
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-tooling @Armor-test/squad-performance @Armor-test/grp-ui
+
+# Directory ownership
+/utils/ @Armor-test/squad-product @Armor-test/dept-release @Armor-test/dept-logging
+/build/ @Armor-test/squad-api @Armor-test/dept-release
+/controllers/ @Armor-test/squad-performance @Armor-test/dept-automation @Armor-test/grp-api
+/data/ @Armor-test/squad-ml @Armor-test/unit-test
+/plugins/ @Armor-test/dept-release @Armor-test/dept-test
+/components/ @Armor-test/squad-performance @Armor-test/dept-identity
+/app/ @Armor-test/team-governance @Armor-test/squad-performance
+/models/ @Armor-test/grp-storage @Armor-test/dept-identity
+/views/ @Armor-test/dept-notifications @Armor-test/unit-test
+/config/ @Armor-test/squad-apps @Armor-test/dept-security @Armor-test/dept-api
+
+# File type ownership
+*.graphql @Armor-test/dept-reporting @Armor-test/grp-integration @Armor-test/dept-notifications
+*.yml @Armor-test/team-notifications @Armor-test/dept-reporting @Armor-test/squad-tooling
+*.tsx @Armor-test/team-frontend @Armor-test/grp-payments @Armor-test/squad-cache
+*.json @Armor-test/dept-api @Armor-test/squad-mobile @Armor-test/dept-ui
+*.sql @Armor-test/squad-mobile @Armor-test/team-core
+*.jsx @Armor-test/squad-search @Armor-test/squad-api
+*.rb @Armor-test/squad-frontend @Armor-test/dept-release
+*.tf @Armor-test/team-research @Armor-test/team-security @Armor-test/squad-api
+*.js @Armor-test/unit-devops @Armor-test/team-logging @Armor-test/team-security
+*.toml @Armor-test/dept-data @Armor-test/grp-storage @Armor-test/unit-devops
+*.css @Armor-test/squad-frontend @Armor-test/squad-ux @Armor-test/squad-reporting
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+package.json @Armor-test/dependency-team @Armor-test/security
+Dockerfile @Armor-test/devops @Armor-test/infra
